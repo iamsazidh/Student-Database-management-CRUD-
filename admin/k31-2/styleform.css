@@ -1,0 +1,57 @@
+*{
+    margin: 10px;
+}
+body{
+    height: auto;
+    background-color: rgb(205, 227, 247);
+    width: auto;
+}
+
+.mylogo{
+    display: inline;
+    position: relative;
+  height: 50px;
+  display: inline;
+
+}
+.ayi_ {
+    display: inline;
+    position: relative;
+    bottom: 30px;
+    margin-left: 37px;
+
+    
+}
+legend{
+    font-weight: bold;
+}
+
+fieldset{
+    width: 300px;
+}
+
+.fform{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+.subbtn{
+    background-color: rgb(55, 126, 8);
+    height: 50px;
+    width: 150px;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 8px;
+    
+}
+
+.subbtn:hover{
+    background-color: rgb(87, 165, 80);
+}
+
+.inpu{
+    height: 20px;
+    width: 230px;
+}

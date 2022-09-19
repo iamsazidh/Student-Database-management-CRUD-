@@ -1,0 +1,498 @@
+.margint{
+    margin-top: -2mm;
+}
+body{
+    height: 200mm;
+    width: 297mm;
+
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+}
+.paddinglf{
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+}
+.bold{
+    font-weight: bolder;
+}
+
+.full_box{
+    height: 200mm;
+    width: 272mm;
+   
+    position: relative;
+    top: 1mm;
+    left: 21mm;
+    display: grid;
+    align-items: start;
+
+    
+    
+    
+    grid-template-areas: 
+    "myheader"
+    "info"
+    "personal_information"
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    ".";
+    
+
+    
+}
+.myheader{
+    grid-area: myheader;
+    padding-top: 0mm;
+    padding-bottom: 4mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.info{
+    grid-area: info;
+    display: grid;
+    grid-template-areas: "batch session university_reg ad_date roll";
+    margin-top: -8px;
+}
+
+.myheader11{
+    margin: 0px 0 0px 0;
+    font-size: 6mm;
+}
+.batch{
+    grid-area: batch;
+}
+
+.session{
+    grid-area: session;
+}
+
+.university_reg{
+    grid-area: university_reg;
+
+}
+
+.ad_date{
+    grid-area: ad_date;
+}
+.roll{
+    grid-area: roll;
+}
+.personal_information{
+    
+    
+    display: grid;
+    column-gap: 0px;
+    row-gap: 0px;
+    
+    
+    align-items: center;
+    grid-template-areas: 
+    "e_name e_name b_name b_name national_num national_num"
+    "father_e_name father_e_name father_b_name father_b_name father_nid father_nid"
+    "mother_e_name mother_e_name mother_b_name mother_b_name mother_nid mother_nid"
+    "gender religion blood_group height per_id per_id"
+    "birth_num birth_num birth_num birth_num birth_date birth_date";
+}
+
+.e_name{
+    grid-area: e_name;
+    
+}
+.b_name{
+    grid-area: b_name;
+    font-size: 14px;
+}
+.father_e_name{
+    grid-area: father_e_name;
+}
+.father_b_name{
+    grid-area: father_b_name;
+    font-size: 14px;
+}
+.mother_e_name{
+    grid-area: mother_e_name;
+}
+.mother_b_name{
+    grid-area: mother_b_name;
+    font-size: 14px;
+}
+.national_num{
+    grid-area: national_num;
+}
+.father_nid{
+    grid-area: father_nid;
+}
+.mother_nid{
+    grid-area: mother_nid;
+}
+
+
+.birth_date{
+    grid-area: birth_date;
+}
+.gender{
+    grid-area: gender;
+}
+.religion{
+    grid-area: religion;
+}
+.blood_group{
+    grid-area: blood_group;
+}
+.per_id{
+    grid-area: per_id;
+}
+.height{
+    grid-area: height;
+}
+.birth_num{
+    grid-area: birth_num;
+}
+
+.admission_info{
+    display: grid;
+    grid-template-areas: 
+    "ad_roll ad_num ad_total_number ad_merit quota";
+    
+}
+
+.ad_roll{
+    grid-area: ad_roll;
+}
+.ad_num{
+    grid-area: ad_num;
+}
+.ad_total_number{
+    grid-area: ad_total_number;
+}
+.ad_merit{
+    grid-area: ad_merit;
+}
+.quota{
+    grid-area: quota;
+}
+/*  */
+
+.pre_exam{
+    display: grid;
+    grid-template-areas: 
+    "hsc_text hsc_num hsc_pas_year hsc_board hsc_center hsc_reg_num hsc_scholar"
+    "ssc_text ssc_num ssc_pas_year ssc_board ssc_center ssc_reg_num ssc_scholar";
+}
+
+
+
+
+/*  */
+.ssc_text{
+    grid-area: ssc_text;
+
+}
+.ssc_num{
+    grid-area: ssc_num;
+
+}
+
+.ssc_pas_year{
+    grid-area: ssc_pas_year;
+}
+.ssc_board{
+    grid-area: ssc_board;
+}
+.ssc_center{
+    grid-area: ssc_center;
+}
+.ssc_reg_num{
+    grid-area: ssc_reg_num;
+}
+.ssc_scholar{
+    grid-area: ssc_scholar;
+}
+
+
+/*  */
+.hsc_text{
+    grid-area: hsc_text;
+    
+    margin-left: 0mm;
+    
+    
+
+}
+.hsc_num{
+    grid-area: hsc_num;
+    
+    
+
+}
+.hsc_pas_year{
+    grid-area: hsc_pas_year;
+}
+.hsc_board{
+    grid-area: hsc_board;
+}
+.hsc_center{
+    grid-area: hsc_center;
+}
+.hsc_reg_num{
+    grid-area: hsc_reg_num;
+}
+.hsc_scholar{
+    grid-area: hsc_scholar;
+}
+
+.gurdian{
+    display: grid;
+    grid-template-areas: 
+    "gurdian_s_rel gur_name";
+}
+
+.gurdian_s_rel{
+    grid-area: gurdian_s_rel;
+}
+.gur_name{
+    grid-area: gur_name;
+}
+
+.father_ocu{
+    grid-area: father_ocu;
+}
+.father_sal{
+    grid-area: father_sal;
+}
+
+
+
+
+
+
+
+
+/*for address */
+
+.address{
+    display: grid;
+    grid-template-areas: "pre_address per_address other_in";
+}
+
+.pre_address{
+    grid-area: pre_address;
+    display: grid;
+    grid-template-areas: 
+    "pre_address_heading pre_address_heading"
+    "pre_add_village pre_add_village"
+    "pre_add_post pre_add_gpo"
+    "pre_add_upozilla pre_add_zilla";
+    border: solid 2px;
+    padding-left: 2mm;
+    padding-bottom: 3mm;
+    
+}
+.per_address{
+    grid-area: per_address; 
+    display: grid;
+    grid-template-areas:
+    "per_address_heading per_address_heading"
+    "per_add_village per_add_village"
+    "per_add_post per_add_gpo"
+    "per_add_upozilla per_add_zilla";
+    margin-left: 2mm;
+    padding-left: 2mm;
+
+    border: solid 2px;
+    padding-bottom: 3mm;
+}
+
+
+.pre_address_heading{
+    grid-area: pre_address_heading;
+    
+}
+.pre_add_village{
+    grid-area: pre_add_village;
+    margin-top: -10mm;
+}
+.pre_add_post{
+    grid-area: pre_add_post;
+    margin-top: -10mm;
+}
+.pre_add_gpo{
+    grid-area: pre_add_gpo;
+    margin-top: -10mm;
+}
+.pre_add_upozilla{
+    grid-area: pre_add_upozilla;
+    margin-top: -10mm;
+    padding-bottom: -20mm;
+    padding-top: -20mm;
+    
+}
+.pre_add_zilla{
+    grid-area: pre_add_zilla;
+    margin-top: -10mm;
+    padding-bottom: -20mm;
+    padding-top: -20mm;
+    
+}
+
+
+.per_address_heading{
+    grid-area: per_address_heading;
+    padding-bottom: 3mm;
+    
+}
+.per_add_village{
+    grid-area: per_add_village;
+    margin-top: -10mm;
+}
+.per_add_post{
+    grid-area: per_add_post;
+    margin-top: -10mm;
+}
+.per_add_gpo{
+    grid-area: per_add_gpo;
+    margin-top: -10mm;
+}
+.per_add_upozilla{
+    grid-area: per_add_upozilla;
+    margin-top: -10mm;
+    padding-bottom: -20mm;
+    padding-top: -20mm;
+    
+}
+.per_add_zilla{
+    grid-area: per_add_zilla;
+    margin-top: -10mm;
+    padding-bottom: -20mm;
+    padding-top: -20mm;
+}
+.other_in{
+    grid-area: other_in;
+    display: grid;
+    grid-template-areas: 
+    "ssc_ins"
+    "hsc_ins"
+    "email"
+    "father_ocu"
+    "father_sal";
+    margin-left: 2mm;
+    padding-left: 2mm;
+    border: solid 2px;
+    
+}
+
+.ssc_ins{
+    grid-area: ssc_ins;
+    margin-top: -0mm;
+    padding-top: 6mm;
+}
+.hsc_ins{
+    grid-area: hsc_ins;
+    margin-top: -2mm;
+}
+.email{
+    grid-area: email;
+    margin-top: -2mm;
+}
+.father_ocu{
+    grid-area: father_ocu;
+    margin-top: -2mm;
+}
+.father_sal{
+    grid-area: father_sal;
+    margin-top: -2mm;
+}
+
+.allmob{
+    display: grid;
+    grid-template-areas: 
+    "mob_num gur_mob_num"
+    "stu_sig gur_sig";
+}
+
+.mob_num{
+    grid-area: mob_num;
+    margin-top: 2mm;
+}
+.gur_mob_num{
+    grid-area: gur_mob_num;
+    margin-top: 2mm;
+}
+
+
+.stu_sig{
+    grid-area: stu_sig;
+    border: solid 2px;
+    padding: 3mm;
+    
+}
+.gur_sig{
+    grid-area: gur_sig;
+    border: solid 2px;
+    padding: 4mm;
+    
+}
+
+.print{
+    height: 10mm;
+    width: 18mm;
+    border-radius: 8px;
+    position: absolute;
+    right: 2mm;
+    bottom: 12mm;
+}
+
+.print:hover{
+    background-color: rgb(147, 191, 226);
+}
+
+
+
+.headerkmc{
+    height: 15mm;
+    margin-right: 40mm;
+}
+
+.headerbd{
+    height: 16mm;
+    margin-left: 40mm
+}
+
+.rarrow{
+    height: 5mm;
+}
+
+
+

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleform.css">
+  <link rel="stylesheet" href="styleform2.css">
+  <link rel="stylesheet" href="bootstrap/bootstrapform.css">
+  <link rel="stylesheet" href="bootstrap/bootstrapform2.css">
+  <link rel="shortcut icon" type="x-icon" href="KMClogo.ico">
+  <title>Add Info</title>
+  <style>
+    .mylogokmc{
+      width: 70px;
+      height: 70px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="mycontainer">
+<div class="container-flued text-center">
+    <img src="KMC.png" alt="kmc logo" class="mylogokmc"><br><br><br><h4 class="ayi_ mb-3">Add Your Information to KMC Database</h4>
+  </div>
+
+<form action="addinfo.php" method="post">
+          <fieldset class="basic_info col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-11 d-block m-auto my-3" >
+            <legend class="h4">Basic Information</legend>
+            <div class="row">
+            <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+                  <label class="form-label" for="ename">Name (English) <span class="text-danger <span class="text-danger">*</span>">*</span></label>
+                  <input required class="form-control" id="ename" type="text" name="e_name"><br>
+                  
+         
+                  <label class="form-label" for="ename">Name (বাংলা) <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" name="b_name" type="text" ><br>
+
+                  <select required name="session" id="" class=" form-select">
+                    <option value="" selected>Select Session <span class="text-danger">*</span></option>
+                    <option value="2021-2022">2021-2022</option>
+                  </select>
+                  <select required name="quota" id="" class="form-select mt-3">
+                    <option value="" selected>Select Quota <span class="text-danger">*</span></option>
+                    <option value="Merit">Merit</option>
+                    <option value="FF">FF</option>
+                    <option value="Foreign" disabled>Foreign</option>
+                    <option value="District">District</option>
+                  </select><br>
+                </div>
+
+
+
+                <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2 mb-sm-2 mx-lg-5">  
+                  <label class="form-label" for="">Class Roll &nbsp;(If You Know)</label><br>
+                  <input class="form-control" type="number" name="class_roll"><br>
+                  <label class="form-label" for="ad_roll">Admission Roll <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="number" name="ad_roll" id="ad_roll"><br>
+                  <label class="form-label" for="">Merit No <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="number" name="merit"><br>
+                  </div>
+
+
+
+                  <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+                  <label class="form-label" for="">Admission Mark <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="ad_num"><br>
+                  <label class="form-label" for="">Admission Total Mark <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="ad_total_number"><br>
+
+                  <label class="form-label" for="">Date of Admission <span class="text-danger">*</span></label><br>
+                  <input required type="date" name="date_ad" class="form-control mb-sm-2 mb-3">
+                </div>
+              </div>
+          </fieldset>
+
+
+          
+          <fieldset class="per_info col-11  col-sm-11  col-md-11  my-3 col-lg-11 col-xxl-11 d-block m-auto">
+            <legend class="h4">Personal Information</legend>
+            <div class="row">
+              <div class="col-11  col-sm-10  col-md-5 mb-sm-2  col-lg-4 col-xxl-3 mx-2  mx-lg-5"> 
+                  <label class="form-label" for="mob_num">Mobile Number <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="number" name="mob_num" id=""><br>
+                  <label class="form-label" for="email">Email Address <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="email"><br>
+                  <label class="form-label" for="birth_reg_num">Birth Registration Number</label><br>
+                  <input class="form-control" type="number" name="birth_reg_num" id=""><br>
+                </div>
+
+
+                
+                  <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5"> 
+                    <label class="form-label" for="national_no">National ID NO</label><br>
+                  <input class="form-control" type="number" name="national_num" id=""><br>
+                  <label class="form-label" for="">Date Of Birth <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="date" name="birth_date" id=""><br>
+                  <label class="form-label" for="blood">Blood Group <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="blood"><br>
+                  <label class="form-label" for="gender">Gender <span class="text-danger">*</span></label><br>
+                  <div class="form-check">
+                  <input required type="radio" name="gender" id="" class="form-check-input" value="Male">&nbsp; Male
+                </div>
+                <div class="form-check">
+                  <input required type="radio" name="gender" id="" class="form-check-input" value="Female">&nbsp; Female
+                  </div>
+                  <!--<input required type="radio" name="gender" id="" value="Other">Other----> <br><br><br>
+                </div>
+
+
+
+                  <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5"> 
+                  <label class="form-label" for="religion">Religion <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="religion"><br>
+                  <label class="form-label" for="height">Height (cm)</label><br>
+                  <input class="form-control" type="text" name="height" id=""><br>
+                  <label class="form-label" for="per_id_mark">Personal ID Mark (Optional)</label><br>
+                  <input class="form-control" type="text" name="per_id" id=""><br>
+                  <label class="form-label" for="place_birth">Place Of Birth (Optional)</label><br>
+                  <input class="form-control mb-sm-2 mb-3" type="text" name="place_birth">
+                </div>
+                </div>
+              
+              </fieldset>
+
+
+
+
+          <fieldset class="parent_info per_info col-11  col-sm-11  col-md-11  my-3 col-lg-11 col-xxl-11 d-block m-auto">
+                  <legend class="h4">Parent Information & Emergency Contact</legend>
+                  <div class="row">
+                    <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5"> 
+                  <label class="form-label" for="">Father Name (EN) <span class="text-danger">*</span></label>     <br>
+                  <input required class="form-control" type="text" name="f_e_name">     <br>
+                  <label class="form-label" for="">Father Name (BN) <span class="text-danger">*</span></label>     <br>
+                  <input required class="form-control" type="text" name="f_b_name">     <br>
+                  <label class="form-label" for="">Mother Name (EN) <span class="text-danger">*</span></label>     <br>
+                  <input required class="form-control" type="text" name="m_e_name">     <br>
+                  <label class="form-label" for="">Mother Name (BN) <span class="text-danger">*</span></label>     <br>
+                  <input required class="form-control mb-3" type="text" name="m_b_name">     <br>
+            </div>
+
+            <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5"> 
+                  <label class="form-label" for="">Father's NID No <span class="text-danger">*</span></label><br>
+                  <input required type="number" name="father_nid" class="form-control"><br>
+                  <label class="form-label" for="">Mother's NID No <span class="text-danger">*</span></label><br>
+                  <input required type="number" name="mother_nid" class="form-control"><br>
+                  <label class="form-label" for="">Gurdian's Relation--- <span class="text-danger">*</span></label><br>
+                  <div class="form-check form-switch">
+                  
+                  <input required type="radio" name="gurdian_s_rel" id="" class="form-check-input" value="Father">Father
+                </div>
+                <div class="form-check form-switch">
+                  <input required type="radio" name="gurdian_s_rel" id="" class="form-check-input" value="Mother">Mother
+                </div>
+                  <div class="form-check form-switch">
+                  <input required type="radio" name="gurdian_s_rel" id="" class="form-check-input" value="Other">Other <br><br>
+                </div>
+                
+                  
+                </div>
+                
+                  <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5"> 
+                    <label class="form-label" for="">(If Other) Relation</label><br>
+                <input class="form-control" type="text" name="gur_f_rel"><br><br><br>
+                  <label class="form-label" for="">(If Other) Name</label><br>
+                  <input class="form-control" type="text" name="gur_name"><br>
+
+                  <label class="form-label" for="">Gurdian Mobile No <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="number" name="gur_num" id=""><br>
+                  <label class="form-label" for="gur_addreas">Gurdian Addreas <span class="text-danger">*</span></label><br>
+                  <input required class="form-control mb-3" type="text" name="gur_address" id=""><br>
+                  </div>
+                </div>
+              </fieldset>
+
+          <fieldset class="address col-11  col-sm-11  col-md-11  my-3 col-lg-11 col-xxl-11 d-block m-auto">
+            <Legend class="h4">Address</Legend>
+            <div class="row">
+            <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-3  mx-lg-3"> 
+            <h5>Present Address</h5>
+            
+                  <label class="form-label" for="village">Village/Road <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="pre_add_village" id=""><br>
+                  <label class="form-label" for="">District <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="pre_add_zilla"><br>
+                  <label class="form-label" for="">PS/Upazila <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="pre_add_upozilla"><br>
+                  <label class="form-label" for="">Post Office <span class="text-danger">*</span></label>  <br>
+                  <input required class="form-control" type="text" name="pre_add_post"><br>
+                  <label class="form-label" for="">Post Code</label>  <br>
+                  <input class="form-control mb-3" type="text" name="pre_add_gpo"><br>
+                </div>
+
+
+                <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-3  mx-lg-auto"> 
+            <h5>Permanent Address</h5>
+            
+                  <label class="form-label" for="village">Village/Road <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="per_add_village" id=""><br>
+                  <label class="form-label" for="">District <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="per_add_zilla"><br>
+                  <label class="form-label" for="">PS/Upazila <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="per_add_upozilla"><br>
+                  <label class="form-label" for="">Post Office <span class="text-danger">*</span></label>  <br>
+                  <input required class="form-control" type="text" name="per_add_post"><br>
+                  <label class="form-label" for="">Post Code</label>  <br>
+                  <input class="form-control mb-3" type="text" name="per_add_gpo">
+                </div>
+              </div>
+              </fieldset>
+
+          <fieldset class="pre_aca_info col-11  col-sm-11  col-md-11  my-3 col-lg-11 col-xxl-11 d-block m-auto">
+            <Legend class="h4">Previous Academic Information</Legend>
+            <div class="row">
+            <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-3  mx-lg-3"> 
+            <h5>HSC</h5><br><br>
+            
+                  <label class="form-label">Institution Name <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="hsc_ins"><br>
+                  <label class="form-label" for="">Board <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="hsc_board"><br>
+                  <label class="form-label" for="">Roll <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="number" name="hsc_roll" id=""><br>
+                  <label class="form-label" for="">Passing Year <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="number" name="hsc_pas_year" id=""><br>
+                  <label class="form-label" for="">Marks/GPA <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="hsc_gpa" id=""><br>
+                  <label class="form-label" for="">HSC GPA Witout 4 Subject</label><br>
+                  <input class="form-control" type="text" name="hsc_without4" id=""><br>
+                  <label class="form-label" for="">Hsc Scholership (Yes or NO) <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="hsc_scholar" id=""><br>
+                  <label class="form-label" for="">HSC Center <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="hsc_center"><br>
+                  <label class="form-label" for="">Registration Number <span class="text-danger">*</span></label><br>
+                  <input required class="form-control mb-3" type="number" name="hsc_reg_no"><br><br><br>
+                </div>
+                <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-3  mx-lg-auto"> 
+            <h5>SSC</h5><br><br>
+            
+                  <label class="form-label">Institution Name <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="ssc_ins"><br>
+                  <label class="form-label" for="">Board <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="ssc_board"><br>
+                  <label class="form-label" for="">Roll <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="number" name="ssc_roll" id=""><br>
+                  <label class="form-label" for="">Passing Year <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="number" name="ssc_pas_year" id=""><br>
+                  <label class="form-label" for="">Marks/GPA <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="ssc_gpa" id=""><br>
+                  <label class="form-label" for="">SSC GPA Witout 4 Subject</label><br>
+                  <input class="form-control" type="text" name="ssc_without4" id=""><br>
+                  <label class="form-label" for="">Ssc Scholership (Yes or NO) <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="ssc_scholar" id=""><br>
+                  <label class="form-label" for="">SSC Center <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="ssc_center"><br>
+                  <label class="form-label" for="">Registration Number <span class="text-danger">*</span></label><br>
+                  <input required class="form-control mb-3" type="number" name="ssc_reg_no"><br><br>
+</div>
+                </div>
+              </fieldset>
+
+          <fieldset class="col-11  col-sm-11  col-md-11  my-3 col-lg-11 col-xxl-11 d-block m-auto">
+                  <legend class="h4">Other Information</legend>
+                  <div class="row">
+                    <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+                  <label class="form-label" for="">Gurdian's Occupation <span class="text-danger">*</span></label><br>
+                  <input required class="form-control" type="text" name="gur_ocu"><br>
+                  
+                  </div>
+                  <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+                  <label class="form-label" for="">Gurdian's Income <span class="text-danger">*</span></label><br>
+                  <input required class="form-control mb-3" type="number" name="gur_sal" id=""><br>
+                  </div>
+                </div>
+          </fieldset>
+
+          <fieldset class="password col-11  col-sm-11  col-md-11  my-3 col-lg-11 col-xxl-11 d-block m-auto">
+            <legend class="h4">Account Setup</legend>
+            <div class="row">
+              <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+                  <label class="form-label" for="">Create a Password for your ID <span class="text-danger">*** </span></label><br>
+                  <label class="form-label" for="">(You Need This For View Your Info)</label>
+                  <input required type="password" name="password" class="mb-3 form-control">
+                  </div>
+                </div>
+              </fieldset>
+          </div>
+            <p class="h5 text-center text-danger">Make sure that all required forms are filled out, otherwise will not be submitted</p>
+            <input type="submit" value="Submit" class="btn btn-primary d-block mx-auto my-5 btn-lg">
+            
+  </form>
+  </div>
+</body>
+</html>

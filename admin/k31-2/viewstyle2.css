@@ -1,0 +1,414 @@
+.margint{
+    margin-top: -2mm;
+}
+body{
+    height: 200mm;
+    width: 297mm;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+}
+.paddinglf{
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+}
+.mpadding{
+ padding-top: 3.6px;
+ padding-bottom: 3.3px;
+
+}
+
+.mmargint{
+margin-top: -18px;
+
+}
+.mmargint3{
+margin-top: -10mm;
+
+}
+.mmargint2{
+margin-top: -2mm;
+
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.full_box{
+    height: 200mm;
+    width: 272mm;
+   
+    position: relative;
+    top: 1mm;
+    left: 21mm;
+    display: grid;
+    align-items: start;
+    
+    
+    
+    grid-template-areas: 
+    "myheader"
+    "info"
+    "personal_information"
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    ".";
+    
+
+    
+}
+.myheader{
+    grid-area: myheader;
+    padding-top: 0mm;
+    padding-bottom: 4mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.info{
+    grid-area: info;
+    display: grid;
+    grid-template-areas: "batch session university_reg ad_date roll";
+    margin-top: -8px;
+}
+
+.myheader11{
+    margin: 0px 0 0px 0;
+    font-size: 6mm;
+}
+.batch{
+    grid-area: batch;
+}
+
+.session{
+    grid-area: session;
+}
+
+.university_reg{
+    grid-area: university_reg;
+
+}
+
+.ad_date{
+    grid-area: ad_date;
+}
+.roll{
+    grid-area: roll;
+}
+
+
+.personal_information1{
+display: grid;
+grid-template-areas: 
+"stu_ins stu_ins e_name e_name national_num national_num"
+"father_ins father_ins father_e_name father_e_name father_ocu father_ocu"
+"mother_ins mother_ins mother_e_name mother_e_name mother_ocu mother_ocu"
+"bir_date_ins blood_ins ad_cat_ins mob_ins country_ins religion_ins"
+"birth_date blood_group quota mob_num country religion"
+"gender gender email email email email";
+}
+
+.gender{
+    grid-area: gender;
+}
+.email{
+    grid-area: email;
+}
+.stu_ins{
+    grid-area: stu_ins;
+}
+.e_name{
+    grid-area: e_name;
+}
+.national_num{
+    grid-area: national_num;
+}
+.father_ins{
+    grid-area: father_ins;
+}
+.father_e_name{
+    grid-area: father_e_name;
+}
+.father_ocu{
+    grid-area: father_ocu;
+}
+.mother_ins{
+    grid-area: mother_ins;
+}
+.mother_e_name{
+    grid-area: mother_e_name;
+}
+.mother_ocu{
+    grid-area: mother_ocu;
+}
+
+.bir_date_ins{
+    grid-area: bir_date_ins;
+}
+.blood_ins{
+    grid-area: blood_ins;
+}
+.ad_cat_ins{
+    grid-area: ad_cat_ins;
+}
+.mob_ins{
+    grid-area: mob_ins;
+}
+.country_ins{
+    grid-area: country_ins;
+}
+.religion_ins{
+    grid-area: religion_ins;
+}
+.birth_date{
+    grid-area: birth_date;
+}
+.blood_group{
+    grid-area: blood_group;
+}
+.quota{
+    grid-area: quota;
+}
+.mob_num1{
+    grid-area: mob_num;
+   
+}
+.country{
+    grid-area: country;
+}
+.religion{
+    grid-area: religion;
+}
+
+
+.address{
+    display: grid;
+    grid-template-areas: 
+    "pre_address per_address other_info";
+}
+
+
+.pre_address{
+    grid-area: pre_address;
+    display: grid;
+    grid-template-areas: 
+    "pre_add_ins"
+    "pre_add";
+    padding-left: 2mm;
+    border: solid 2px;
+}
+.per_address{
+    grid-area: per_address;
+    display: grid;
+    grid-template-areas: 
+    "per_add_ins"
+    "per_add";
+    margin-left: 1mm;
+    padding-left: 2mm;
+    border: solid 2px;
+}
+
+.pre_add{
+    grid-area: pre_add;
+}
+.per_add{
+    grid-area: per_add;
+}
+.pre_add_ins{
+    grid-area: pre_add_ins;
+    font-weight: bold;
+}
+.per_add_ins{
+    grid-area: per_add_ins;
+    font-weight: bold;
+}
+
+.other_info{
+    margin-left: 1mm;
+    padding-left: 2mm;
+    grid-area: other_info;
+    display: grid;
+    grid-template-areas: 
+    "passport_no"
+    "date_issue"
+    "date_expiry"
+    "visa_no"
+    "arrival_date";
+    border: solid 2px;
+}
+
+.passport_no{
+    grid-area: passport_no;
+}
+.date_issue{
+    grid-area: date_issue;
+}
+.date_expiry{
+    grid-area: date_expiry;
+}
+.visa_no{
+    grid-area: visa_no;
+}
+.arrival_date{
+    grid-area: arrival_date;
+}
+
+
+.pre_exam{
+    display: grid;
+    grid-template-areas: 
+    "ssc_text ssc_deg ssc_roll ssc_num ssc_pas_year ssc_reg_num"
+    "hsc_text hsc_deg hsc_roll hsc_num hsc_pas_year hsc_reg_num"
+    "ssc_ins ssc_ins ssc_ins hsc_ins hsc_ins hsc_ins";
+}
+
+
+
+
+/*  */
+.ssc_text{
+    grid-area: ssc_text;
+
+}
+.ssc_deg{
+    grid-area: ssc_deg;
+
+}
+.ssc_roll{
+    grid-area: ssc_roll;
+
+}
+.ssc_num{
+    grid-area: ssc_num;
+
+}
+
+.ssc_pas_year{
+    grid-area: ssc_pas_year;
+}
+.ssc_reg_num{
+    grid-area: ssc_reg_num;
+}
+
+/*  */
+.hsc_text{
+    grid-area: hsc_text;
+    
+    margin-left: 0mm;
+}
+.hsc_deg{
+    grid-area: hsc_deg;
+}
+.hsc_roll{
+    grid-area: hsc_roll;
+}
+.hsc_num{
+    grid-area: hsc_num;
+}
+
+.hsc_pas_year{
+    grid-area: hsc_pas_year;
+}
+.hsc_reg_num{
+    grid-area: hsc_reg_num;
+}
+
+.hsc_ins{
+    grid-area: hsc_ins;
+}
+.ssc_ins{
+    grid-area: ssc_ins;
+}
+
+
+
+
+
+
+/* last      -------------------------------- */
+
+
+.signature{
+    display: grid;
+    grid-template-areas: "stu_sig gur_sig";
+    margin-bottom: -20mm;
+}
+
+.stu_sig{
+    grid-area: stu_sig;
+    border: solid 2px;
+    padding: 4mm;
+    
+}
+.gur_sig{
+    grid-area: gur_sig;
+    border: solid 2px;
+    padding: 4mm;
+    
+}
+
+.print{
+    height: 10mm;
+    width: 18mm;
+    border-radius: 8px;
+    position: absolute;
+    right: 2mm;
+    bottom: 8mm;
+}
+
+.print:hover{
+    background-color: rgb(147, 191, 226);
+}
+
+
+
+.headerkmc{
+    height: 15mm;
+    margin-right: 35mm;
+}
+
+.headerbd{
+    height: 16mm;
+    margin-left: 35mm;
+}
+
+
+.rarrow{
+    height: 5mm;
+
+}
+
+
+
+

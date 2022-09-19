@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/bootstrapform.css">
+  <link rel="shortcut icon" type="x-icon" href="KMClogo.ico">
+  <title>Add Info</title>
+  <style>
+    .mylogokmc{
+      width: 70px;
+      height: 70px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="mycontainer">
+    <div class="container-flued text-center">
+        <img src="KMC.png" alt="kmc logo" class="mylogokmc"><br><br><br><h4 class="ayi_ mb-3">Add Your Information to KMC Database</h4>
+      </div>
+
+<!-- FORM START -->
+<form action="addinfo.php" method="post">
+  <div class="fform">
+<fieldset class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-11 d-block m-auto my-3" >
+    <legend>Basic Information</legend>
+    <div class="row">
+      <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+     <label class="form-label" for="ename">Name (English)</label><br>
+    <input class="form-control"  type="text" name="e_name"><br>
+
+
+    <select name="session" id="" class="form-select">
+      <option value="">Select Session</option>
+      <option value="2021-2022">2021-2022</option>
+    </select>
+
+  </div>
+
+<div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2 mb-sm-2 mx-lg-5">  
+  <select name="quota" id="" class="form-select my-3">
+    <option value="">Select Quota</option>
+    <option value="SAARC">SAARC</option>
+    <option value="None_SAARCH">None SAARC</option>
+  </select>
+     <label class="form-label" for="">Class Roll &nbsp;(If You Know)</label><br>
+    <input class="form-control" type="number" name="class_roll"><br>
+
+
+</div>
+
+<div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2 mb-sm-2 mx-lg-5">  
+  <label class="form-label" for="">Date of Admission</label><br>
+  <input type="date" name="date_ad" class="form-control">
+
+</div>
+</div>
+  </fieldset>
+  <fieldset class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-11 d-block m-auto my-3" >
+    <legend>Personal Information</legend>
+     <div class="row">
+      <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+     <label class="form-label" for="mob_num">Mobile Number</label><br>
+    <input class="form-control" type="number" name="mob_num" id=""><br>
+     <label class="form-label" for="email">Email Address</label><br>
+    <input class="form-control" type="text" name="email"><br>
+     <label class="form-label" for="">Country</label><br>
+    <input type="text" class="country form-control" name="country"><br>
+    <label class="form-label" for="national_no">National ID NO</label><br> 
+    <input class="form-control" type="number" name="national_num" id=""><br>
+     </div>
+    
+     <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2 mb-sm-2 mx-lg-5"> 
+
+     <label class="form-label" for="">Date Of Birth</label><br>
+    <input class="form-control" type="date" name="birth_date" id=""><br>
+     <label class="form-label" for="blood">Blood Group</label><br>
+    <input class="form-control" type="text" name="blood"><br>
+     <label class="form-label" for="gender">Gender</label>
+     <div class="form-check">
+      <input  type="radio" name="gender" id="" class="form-check-input" value="Male">&nbsp; Male
+    </div>
+    <div class="form-check">
+      <input  type="radio" name="gender" id="" class="form-check-input" value="Female">&nbsp; Female
+      </div>
+    <!--<input type="radio" name="gender" id="" value="Other">Other----> <br><br><br>
+    </div>
+    <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2 mb-sm-2 mx-lg-5">  
+     <label class="form-label" for="religion">Religion</label><br>
+    <input class="form-control" type="text" name="religion"><br>
+     <label class="form-label" for="height">Height (cm)</label><br>
+    <input class="form-control" type="text" name="height" id=""><br>
+     <label class="form-label" for="per_id_mark">Personal ID Mark (Optional)</label><br>
+    <input class="form-control" type="text" name="per_id" id=""><br>
+     <label class="form-label" for="place_birth">Place Of Birth (Optional)</label><br>
+    <input class="form-control" type="text" name="place_birth">
+    </div>
+</div>
+  </fieldset>
+
+
+  <fieldset class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-11 d-block m-auto my-3" >
+    <legend>Parent Information & Emergency Contact</legend>
+     <div class="row">
+      <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+     <label class="form-label" for="">Father Name (EN)</label>     <br>
+    <input class="form-control" type="text" name="f_e_name">     <br>
+     <label class="form-label" for="">Mother Name (EN)</label>     <br>
+    <input class="form-control" type="text" name="m_e_name">     <br>
+     <label class="form-label" for="">Father's Occupation</label><br>
+    <input type="text" name="father_ocu" class="form-control"><br>
+    </div>
+    <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2 mb-sm-2 mx-lg-5">  
+     <label class="form-label" for="">Mother's Occupation</label><br>
+    <input type="text" name="mother_ocu" class="form-control"><br>
+     <label class="form-label" for="">Gurdian Mobile No (Optional)</label><br>
+    <input class="form-control" type="number" name="gur_num" id=""><br>
+    </div>
+</div>
+   </fieldset>
+
+   <fieldset class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-11 d-block m-auto my-3" >
+    <Legend>Address</Legend>
+     <div class="row">
+      <div class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-9 mx-11  mx-lg-5 mx-lg-5">  
+    
+     <label class="form-label" for="village"><h4>Present Address</h4><p>(IN DETAIL)</p></label><br>
+    <input class="form-control" type="text" name="pre_add" id=""><br>
+    </div>
+    <div class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-9 mx-2 mb-sm-2 mx-lg-5">  
+
+      <label class="form-label" for="village"><h4>Permanent Address</h4><p>(IN DETAIL)</p></label><br>
+    <input class="form-control" type="text" name="per_add" id=""><br>
+    </div>
+</div>
+   </fieldset>
+
+   <!--  -->
+   <fieldset class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-11 d-block m-auto my-3" >
+    <Legend>Previous Academic Information</Legend>
+     <div class="row">
+      <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+    <h3>HSC</h3><br><br>
+     <label class="form-label" for="">HSC Degree</label><br>
+    <input class="form-control" type="text" name="hsc_deg"><br>
+    <label>Institution Name</label><br>
+    <input class="form-control" type="text" name="hsc_ins"><br>
+     <label class="form-label" for="">Roll</label><br>
+    <input class="form-control" type="number" name="hsc_roll" id=""><br>
+     <label class="form-label" for="">Passing Year</label><br>
+    <input class="form-control" type="number" name="hsc_pas_year" id=""><br>
+     <label class="form-label" for="">Marks/GPA</label><br>
+    <input class="form-control" type="text" name="hsc_gpa" id=""><br>
+     <label class="form-label" for="">Registration NO</label><br>
+    <input class="form-control" type="number" name="hsc_reg_no"><br><br><br>
+
+    </div>
+    <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2 mb-sm-2 mx-lg-5">  
+    <h3>SSC</h3><br><br>
+     <label class="form-label" for="">SSC Degree</label><br>
+    <input class="form-control" type="text" name="ssc_deg"><br>
+    <label>Institution Name</label><br>
+    <input class="form-control" type="text" name="ssc_ins"><br>
+     <label class="form-label" for="">Roll</label><br>
+    <input class="form-control" type="number" name="ssc_roll" id=""><br>
+     <label class="form-label" for="">Passing Year</label><br>
+    <input class="form-control" type="number" name="ssc_pas_year" id=""><br>
+     <label class="form-label" for="">Marks/GPA</label><br>
+    <input class="form-control" type="text" name="ssc_gpa" id=""><br>
+     <label class="form-label" for="">Registration NO</label><br>
+    <input class="form-control" type="number" name="ssc_reg_no"><br><br>
+    </div>
+</div>
+   </fieldset>
+
+
+   <fieldset class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-11 d-block m-auto my-3" >
+    <legend>Other Information</legend>
+     <div class="row">
+      <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+     <label class="form-label" for="">Passport NO</label><br>
+    <input class="form-control" type="number" name="passport_no"><br><br>
+     <label class="form-label" for="">Date of Issue</label><br>
+    <input class="form-control" type="date" name="date_issue"><br><br>
+     <label class="form-label" for="">Date of Expiry</label><br>
+    <input class="form-control" type="date" name="date_expiry"><br><br>
+    </div>
+    <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2 mb-sm-2 mx-lg-5">  
+     <label class="form-label" for="">Visa NO</label><br>
+    <input class="form-control" type="number" name="visa_no"><br><br>
+     <label class="form-label" for="">Arrival Date</label><br>
+    <input class="form-control" type="date" name="arri_date"><br><br>
+    </div>
+</div>
+  </fieldset>
+
+  <fieldset class="col-11  col-sm-11  col-md-11   col-lg-11 col-xxl-11 d-block m-auto my-3" >
+     <legend>Account Setup</legend>
+      <div class="row">
+      <div class="col-11  col-sm-10  col-md-5   col-lg-4 col-xxl-3 mx-2  mx-lg-5">  
+      <label class="form-label" for="">Create a Password for your ID</label><br>
+      <label class="form-label" for="">(You Need This For View Your Info)</label>
+     <input type="password" name="password" class="form-control">
+     </div>
+</div>
+   </fieldset>
+   </div>
+   <p class="h5 text-center text-danger">Make sure that all required forms are filled out</p>
+   <input type="submit" value="Submit" class="btn btn-primary d-block mx-auto my-5 btn-lg">
+  </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+.viewbtn{
+    height: 36px;
+    width: 120px;
+    color: white;
+    background-color: #009879;
+    border-radius: 8px;
+}
+
+.viewbtn:hover{
+    background-color: #017c63;
+}
+
+.addbtn{  
+        position: absolute;
+            top: 30px;
+            right: 20px;
+            
+            color: white;
+            background-color: rgb(36, 56, 240);
+            font-weight: bolder;
+            height: 40px;
+            width: auto;
+            border-radius: 8px;
+            font-size: 13px;
+            font-family: cursive;
+}
+
+.addbtn:hover{
+    background-color: blue;
+}
+
+.search_group{
+    position: absolute;
+    top: 90px;
+    left: 10mm;
+    height: auto;
+    
+}
+
+.searchbar,.search_submit{
+    
+    border: solid 1px;
+}
+
+.searchbar{
+    height: 35px;
+    border-radius: 3px;
+    background-color: #dddddd;
+}
+
+.search_submit{
+    margin-left: 3mm;
+    width: 25mm;
+    height: 38px;
+    border-radius: 8px;
+    background-color: #a3c2d4;
+    color: white;
+    border: solid 1px black;
+}
+
+.search_submit:hover{
+    background-color: #82bbdb;
+}
+
+
+/*Table
+
+* {
+    font-family: sans-serif; /* Change your font family */
+    
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: content;
+  min-width: 155mm;
+  max-width: 1600px;
+}
+
+.content-table {
+  
+  margin-top: 40mm;
+  font-size: 0.9em;
+  min-width: 150mm;
+  max-width: 95%;
+  
+  border-radius: 5px 5px 0 0;
+  overflow: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.myaddbtn{
+   position: absolute;
+  top: 5px;
+  right: 48%;
+  color: blue;
+}
+.viewmymybtn{
+background-color: #009879;
+}
+.viewlink{
+color: aliceblue;
+text-decoration: none;
+}
+
+.back_ins{
+  position: absolute;
+  top: 30px;
+  left: 10mm;
+  height: auto;
+  font-size: large;
+  background-color: aqua;
+  padding: 2mm;
+  border-radius: 8px;
+}
+
+.contact{
+  position: absolute;
+ right: ;
+ top: 20mm;
+}

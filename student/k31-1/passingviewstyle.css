@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100mm;
+    background-color: rgb(141, 219, 219);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 8px;
+    padding: 10mm;
+
+
+}
+
+label{
+font-weight: bold;
+}
+
+
+.sub{
+    background-color: black;
+    color: white;
+    font-size: 5mm;
+    padding: 1mm;
+    border-radius: 8px;
+    margin-top: 10mm;
+}
+
+.pass{
+    height: 8mm;
+    width: 60mm;
+    border: solid black;
+    border-radius: 5px;
+}

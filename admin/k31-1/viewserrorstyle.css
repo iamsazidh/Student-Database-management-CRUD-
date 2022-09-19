@@ -1,0 +1,10 @@
+.wrong{
+    color: red;
+    font-size: 20mm;
+}
+.back{
+    background: aquamarine;
+    height: 20mm;
+    width: 60mm;
+    font-size: large;
+}
